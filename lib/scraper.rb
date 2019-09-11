@@ -23,7 +23,8 @@ class Scraper
     page = Nokogiri::HTML(open(profile_url))
       student = {}
       
-      page 
+      social_icons = page.css(".social-icon-container a").collect{|icon| icon.atttribute("href").value}
+      social_icons.each do |link|
       
       # <div class="social-icon-container">
       #     <a href="https://twitter.com/empireofryan"><img class="social-icon" src="../assets/img/twitter-icon.png"></a>
