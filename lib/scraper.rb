@@ -33,7 +33,7 @@ class Scraper
     #           </div>
     #         </a>
     #       </div>)
-  end
+  
 
   def self.scrape_profile_page(profile_url)
     
