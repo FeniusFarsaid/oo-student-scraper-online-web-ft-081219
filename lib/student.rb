@@ -9,16 +9,16 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(students_array)
+  # def self.create_from_collection(students_array)
     
-  end
+  # end
 
-  def add_student_attributes(attributes_hash)
+  # def add_student_attributes(attributes_hash)
     
-  end
+  # end
 
-  def self.all
+  # def self.all
     
-  end
+  # end
 end
 
