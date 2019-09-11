@@ -22,29 +22,7 @@ class Scraper
     
     
     
-    # id="ryan-johnson-card">
-    #         <a href="students/ryan-johnson.html">
-    #           <div class="view-profile-div">
-    #             <h3 class="view-profile-text">View Profile</h3>
-    #           </div>
-    #           <div class="card-text-container">
-    #             <h4 class="student-name">Ryan Johnson</h4>
-    #             <p class="student-location">New York, NY</p>
-    #           </div>
-    #         </a>
-    #       </div>)
     
-    # index_html = open(index_url)
-    # index_doc = Nokogiri::HTML(index_html)
-    # student_cards = index_doc.css(".student-card")
-    # students = []
-    # student_cards.collect do |student_card_xml|
-    #   students << {
-    #     :name => student_card_xml.css("h4.student-name").text,
-    #     :location => student_card_xml.css("p.student-location").text,
-    #     :profile_url => "./fixtures/student-site/" + student_card_xml.css("a").attribute("href").value
-    #     }
-    # end
   
 
   def self.scrape_profile_page(profile_url)
